@@ -30,6 +30,18 @@
         {
             font-size: 30px;
         }
+        table, th, td 
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .center-table
+        {
+            font-size: xx-large;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -51,20 +63,20 @@
             </li>
         </ul>
     </div>
-    <div class="table">
-        <table>
+    <table class="center-table">
+        <tr>
             <th>NYC Spot</th>
             <th>Rating</th>
-            <tr>
-                <td>World Trade Center</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Coney Island</td>
-                <td>6</td>
-            </tr>
-        </table>
-    </div>
+        </tr>
+        <tr>
+            <td>World Trade Center</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Coney Island</td>
+            <td>6</td>
+        </tr>
+    </table>
 
     <footer>2022-2022 &copy;</footer>
 </body>
