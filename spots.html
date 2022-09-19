@@ -20,7 +20,7 @@
             color: black;
             font-weight: 200;
         }
-        h1, h2,footer
+        h1, h2,footer, form
         {
             text-align: center;
         }
@@ -32,6 +32,14 @@
         {
             border: 1px solid black;
             border-collapse: collapse;
+        }
+        form
+        {
+            margin: 50px;
+        }
+        form, label, input
+        {
+            font-size: x-large;
         }
         .center-table
         {
@@ -61,6 +69,16 @@
             </li>
         </ul>
     </nav>
+    <!-- Form -->
+    <form onsubmit="return false;">
+        <label for="best-spots">Best Spots</label><br><br>
+        <input list="best-spots" name="best-spots"><br>
+        <datalist id="best-spots">
+            <option value="One World Trade Center">
+            <option value="Coney Island">
+        </datalist><br><br>
+        <input type="submit">
+    </form>
     <!-- Table  -->
     <table class="center-table">
         <tr>
