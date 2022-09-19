@@ -28,9 +28,24 @@
         {
             text-align: center;
         }
+        img
+        {
+            height: 7em;
+            width: 9em;
+        }
         .navbar
         {
             font-size: 30px;
+        }
+        .hobbies
+        {
+            font-size: 30px;
+        }
+        .list
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -54,12 +69,41 @@
         </ul>
     </nav>
     <div class="hobbies">
+        <!-- Two Headings -->
         <h1>Hobbies/Favorites</h1>
         <h2>Food</h2>
-
-        <h2>Games</h2>
+        <div class="list">
+            <ol>
+                <li>Sushi</li>
+                <!-- Paragraph  -->
+                <p>My Favorite Food because the of the amount of options and taste</p>
+                <!-- Image Absolute Link -->
+                <img src="https://www.mashed.com/img/gallery/shrimp-tempura-roll-what-you-should-know-before-ordering/l-intro-1628971551.jpg" alt="Sushi image">
+                <li>Clams</li>
+                <li>Ice Cream</li>
+            </ol>
+        </div>
         
+        <h2>Games</h2>
+        <div class="list">
+            <ol>
+                <li>Hollow Knight</li>
+                <!-- Paragraph -->
+                <p>My Favorite Game because of the atmosphere, art, music, gameplay, etc.</p>
+                <!-- Image, Relative Link-->
+                <img src="images/hollowKnight.jpg" alt="hollow knight image">
+                <br>
+                <audio controls>
+                    <source src="audio/hollowKnight.mp3" type="audio/mpeg">
+                  Hollow Knight Sample Track.
+                </audio>
+                <li>Terraria</li>
+                <li>Ace Attorney</li>
+                <li>Kriby</li>
+            </ol>
+        </div>
     </div>
+    <!-- Semantic Element and Copyright -->
     <footer>2022-2022 &copy;</footer>
 </body>
 </html>
