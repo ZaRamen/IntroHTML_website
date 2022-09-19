@@ -13,6 +13,10 @@
         ul
         {
             list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
         }
         body
         {
@@ -48,6 +52,24 @@
             margin-right: auto;
             text-align: center;
         }
+        .list
+        {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+        }
+        a:link
+        {
+            text-decoration: none;
+        }
+        a:visited , a:link
+        {
+            color: rgb(128, 12, 12);
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -65,29 +87,53 @@
                 <a href="skills.html">How To</a>
             </li>
             <li>
-                <a href="spots.html">NYC</a>
+                <a href="spots.html">NYC Spots</a>
             </li>
         </ul>
     </nav>
-    <!-- Form -->
+    <!-- Headings -->
+    <h1>Best Spots In NYC</h1>
+    <h2>In my opinion</h2>
+    <!-- Paragraphs -->
+    <div class="list">
+        <ol>
+            <li>One World Trade Center</li>
+            <img src="images/world-trade-center.jpg" alt="world trade center image">
+            <p>Went here once, going on the elevator up made my ears pop but also showed a very scenic view of NYC</p>
+            <li>Coney Island</li>
+            <img src="https://www.nycgovparks.org/photo_gallery/full_size/25097.jpg" alt="Coney Island Beach Image">
+            <p>I don't really like the rides at Luna Park but the nice cool beach breeze is good</p>
+            <li>The Oculus</li>
+            <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2016/09/08/118a7357-9eee-4ef8-a3e6-92365053f4f6/thumbnail/640x480/7ff625e45c1bc54b67e84da78c20d257/daniel-jones-greenwich-st-entrance.jpg" alt="The Oculus Image">
+            <p>Looks like a rib cage or some pokemon</p>
+        </ol>
+    </div>
+    
+    <!-- Form doesn't actually work-->
     <form onsubmit="return false;">
-        <label for="best-spots">Best Spots</label><br><br>
+        <label for="best-spots">What is Your Favorite Spot?</label><br><br>
         <input list="best-spots" name="best-spots"><br>
         <datalist id="best-spots">
             <option value="One World Trade Center">
             <option value="Coney Island">
+            <option value="The Oculus"></option>
         </datalist><br><br>
         <input type="submit">
     </form>
+    <h1>My Rating of the NYC Spots</h1>
     <!-- Table  -->
     <table class="center-table">
         <tr>
             <th>NYC Spot</th>
-            <th>Rating</th>
+            <th>Rating (1-10)</th>
         </tr>
         <tr>
             <td>One World Trade Center</td>
             <td>8</td>
+        </tr>
+        <tr>
+            <td>The Oculus</td>
+            <td>7</td>
         </tr>
         <tr>
             <td>Coney Island</td>

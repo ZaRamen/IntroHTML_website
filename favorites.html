@@ -13,6 +13,10 @@
         ul
         {
             list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
         }
         body
         {
@@ -32,11 +36,7 @@
         {
             height: 400px;
         }
-        .navbar
-        {
-            font-size: 30px;
-        }
-        .hobbies
+        .navbar, .hobbies
         {
             font-size: 30px;
         }
@@ -45,6 +45,18 @@
             display: flex;
             justify-content: center;
             font-size: 25px;
+        }
+        a:link
+        {
+            text-decoration: none;
+        }
+        a:visited , a:link
+        {
+            color: rgb(128, 12, 12);
+        }
+        a:hover
+        {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -63,7 +75,7 @@
                 <a href="skills.html">How To</a>
             </li>
             <li>
-                <a href="spots.html">NYC</a>
+                <a href="spots.html">NYC Spots</a>
             </li>
         </ul>
     </nav>
