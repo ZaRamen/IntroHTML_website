@@ -28,15 +28,16 @@
         {
             font-size: x-large;
         }
-        h1, h2, footer
+        h1,h2, footer
         {
             text-align: center;
         }
         img
         {
             height: 400px;
+            max-width: 700px;
         }
-        .navbar, .hobbies
+        h1, .navbar
         {
             font-size: 30px;
         }
@@ -44,7 +45,8 @@
         {
             display: flex;
             justify-content: center;
-            font-size: 25px;
+            align-items: center;
+            flex-direction: column;
         }
         a:link
         {
@@ -65,7 +67,7 @@
     <nav class="navbar">
         <ul>
             <li>
-                <a href = "index.html">Home</a>
+                <a href ="index.html">Home</a>
             </li>
             <li>
                 <!-- Relative links -->
@@ -79,29 +81,26 @@
             </li>
         </ul>
     </nav>
+    
     <div class="hobbies">
         <!-- Two Headings -->
         <h1>Hobbies/Favorites</h1>
         <h2>Food</h2>
         <div class="list">
-            <dl>
-                <dt>Sushi</dt>
-                <!-- Paragraph  -->
-                <dt><img src="https://www.mashed.com/img/gallery/shrimp-tempura-roll-what-you-should-know-before-ordering/l-intro-1628971551.jpg" alt="Sushi image"></dt>
-                <dd><p>My favorite food because the of the amount of options and taste</p></dd>
-                <!-- Image Absolute Link -->
-                <dt>Ice Cream</dt>
-                <dt><img src="https://static01.nyt.com/images/2020/06/07/multimedia/07virus-ice-cream2/07virus-ice-cream2-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Ice Cream image"></dt>
-                <dd><p>I mean it has to be illegal to not like ice cream</p></dd>
-                <dt>Anything Seafood. i.e Clams, Oysters, Sashimi, etc</dt>
-                <dt><img src="https://popmenucloud.com/cdn-cgi/image/width%3D600%2Cheight%3D600%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/mdylvwit/012ee303-846d-4189-935b-b15453986bbc.jpg" alt="seafood platter"></dt>
-                <dd><p>They all taste great with cocktail sauce (not including Sashimi)</p></dd>
-            </dl>
+            <h2>Sushi</h2>
+            <!-- Image Absolute Link -->
+            <img src="https://www.mashed.com/img/gallery/shrimp-tempura-roll-what-you-should-know-before-ordering/l-intro-1628971551.jpg" alt="Sushi image">
+            <p>My favorite food because the of the amount of options and taste</p>
+            <h2>Ice Cream</h2>
+            <img src="https://static01.nyt.com/images/2020/06/07/multimedia/07virus-ice-cream2/07virus-ice-cream2-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Ice Cream image">
+            <p>I mean it has to be illegal to not like ice cream</p>
+            <h2>Anything Seafood. i.e Clams, Oysters, Sashimi, etc</h2>
+            <img src="https://popmenucloud.com/cdn-cgi/image/width%3D600%2Cheight%3D600%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/mdylvwit/012ee303-846d-4189-935b-b15453986bbc.jpg" alt="seafood platter">
+            <p>They all taste great with cocktail sauce (not including Sashimi)</p>
         </div>
         <h2>Games</h2>
         <div class="list">
-            <ol>
-                <li>Hollow Knight</li>
+                <h2>Hollow Knight</h2>
                 <!-- Paragraph -->
                 <p>My Favorite Game because of the atmosphere, art, music, gameplay, etc.</p>
                 <!-- Image, Relative Link-->
@@ -112,19 +111,18 @@
                     <source src="audio/hollowKnight.mp3" type="audio/mpeg">
                   Hollow Knight Sample Track.
                 </audio>
-                <li>Terraria</li>
+                <h2>Terraria</h2>
                 <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/105600/header.jpg?t=1590092560" alt="terraria">
                 <p>A game that has thousands of items and cool bosses.</p>
-                <li>Ace Attorney</li>
+                <h2>Ace Attorney</h2>
                 <img src="https://i.ytimg.com/vi/QY7EDGd_B50/maxresdefault.jpg" alt="Ace Attorney">
                 <p>It's a mix of a detective and attorney game. Most cases are really enjoyable.</p>
-                <li>Kriby</li>
+                <h2>Kriby</h2>
                 <img src="https://www.pngkey.com/png/detail/424-4248605_cocinero-png-kirby-super-star-cook.png" alt="kirby cooking">
                 <p>Played a lot of the ds kirby games as a kid. Always liked the various different abilites.</p>
-                <li>Exploding Kittens</li>
+                <h2>Exploding Kittens</h2>
                 <img src="https://assets-prd.ignimgs.com/2022/04/18/exploding-kittens-on-netflix-1650294910016.jpg" alt="exploding kittens">
                 <p>A very fun card game that is even more enjoyable with the added expansions.</p>
-            </ol>
         </div>
     </div>
     <!-- Semantic Element and Copyright -->

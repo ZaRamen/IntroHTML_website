@@ -28,7 +28,7 @@
         {
             text-align: center;
         }
-        .navbar
+        h1, .navbar
         {
             font-size: 30px;
         }
@@ -40,6 +40,10 @@
         form
         {
             margin: 50px;
+        }
+        img
+        {
+            max-width: 500px;
         }
         form, label, input
         {
@@ -56,7 +60,8 @@
         {
             display: flex;
             justify-content: center;
-            font-size: 25px;
+            flex-direction: column;
+            align-items: center;
         }
         a:link
         {
@@ -96,32 +101,28 @@
     <h2>In my opinion</h2>
     <!-- Paragraphs -->
     <div class="list">
-        <ol>
-            <li>One World Trade Center</li>
-            <img src="images/world-trade-center.jpg" alt="world trade center image">
-            <p>Went here once, going on the elevator up made my ears pop but also showed a very scenic view of NYC</p>
-            <li>Coney Island</li>
-            <img src="https://www.nycgovparks.org/photo_gallery/full_size/25097.jpg" alt="Coney Island Beach Image">
-            <p>I don't really like the rides at Luna Park but the nice cool beach breeze is good</p>
-            <li>The Oculus</li>
-            <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2016/09/08/118a7357-9eee-4ef8-a3e6-92365053f4f6/thumbnail/640x480/7ff625e45c1bc54b67e84da78c20d257/daniel-jones-greenwich-st-entrance.jpg" alt="The Oculus Image">
-            <p>Looks like a rib cage or some pokemon</p>
-        </ol>
+        <h2>One World Trade Center</h2>
+        <img src="images/world-trade-center.jpg" alt="world trade center image">
+        <p>Went here once, going on the elevator up made my ears pop but also showed a very scenic view of NYC</p>
+        <h2>Coney Island</h2>
+        <img src="https://www.nycgovparks.org/photo_gallery/full_size/25097.jpg" alt="Coney Island Beach Image">
+        <p>I don't really like the rides at Luna Park but the nice cool beach breeze is good</p>
+        <h2>The Oculus</h2>
+        <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2016/09/08/118a7357-9eee-4ef8-a3e6-92365053f4f6/thumbnail/640x480/7ff625e45c1bc54b67e84da78c20d257/daniel-jones-greenwich-st-entrance.jpg" alt="The Oculus Image">
+        <p>Looks like a rib cage or some pokemon</p>
     </div>
-    <h1>Worst Spots in NYC</h1>
+    <h2>Worst Spots in NYC</h2>
     <div class="list">
-        <ol>
-            <li>Subway</li>
-            <img src="https://static01.nyt.com/images/2020/03/27/nyregion/00nyvirus-subwayNEW30/00nyvirus-subwayNEW30-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Subway image">
-            <p>Always crowded in the morning. For some reason has delays and rerouts in the worst possible times.</p>
-            <li>Any Public Bathroom</li>
-            <img src="images/bathroom.jpg" alt="Public Bathroom Image">
-            <p>Public bathrooms are dirty and toliet paper is almost always littered around the floor.</p>
-        </ol>
+        <h2>Subway</h2>
+        <img src="https://static01.nyt.com/images/2020/03/27/nyregion/00nyvirus-subwayNEW30/00nyvirus-subwayNEW30-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Subway image">
+        <p>Always crowded in the morning. For some reason has delays and rerouts in the worst possible times.</p>
+        <h2>Any Public Bathroom</h2>
+        <img src="images/bathroom.jpg" alt="Public Bathroom Image">
+        <p>Public bathrooms are dirty and toliet paper is almost always littered around the floor.</p>
     </div>
     <!-- Form doesn't actually work-->
     <form onsubmit="return false;">
-        <label for="best-spots">What is Your Favorite Spot?</label><br><br>
+       <h1>What's Your Favorite Spot in NYC?</h1><br><br>
         <input list="best-spots" name="best-spots"><br>
         <datalist id="best-spots">
             <option value="One World Trade Center">
