@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Spots Page</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+            font-size: 3vh;
+        }
+        body
+        {
+            background-color: #2999BC;
+            color: black;
+            font-weight: 200;
+            font-size: x-large;
+            text-align: center;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .navbar
+        {
+            font-size: 2.5vh;
+        }
+        table, th, td 
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        form
+        {
+            margin: 50px;
+        }
+        img
+        {
+            height: 500px;
+            max-width: 100%;
+        }
+        .center-table
+        {
+            font-size: xx-large;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .list
+        {
+           text-align: center;
+           margin: auto;
+        }
+        a:link
+        {
+            text-decoration: none;
+        }
+        a:visited , a:link
+        {
+            color: rgb(128, 12, 12);
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Redirects to other pages / unordered list -->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href = "index.html">Home</a>
+            </li>
+            <li>
+                <!-- Relative links -->
+                <a href="favorites.html">Favorites</a>
+            </li>
+            <li>
+                <a href="skills.html">How To</a>
+            </li>
+            <li>
+                <a href="spots.html">NYC Spots</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Headings -->
+    <h1>Best Spots In NYC</h1>
+    <h2>In my opinion</h2>
+    <!-- Paragraphs -->
+    <div class="list">
+        <h2>One World Trade Center</h2>
+        <img src="images/world-trade-center.jpg" alt="world trade center image">
+        <p>Went here once, going on the elevator up made my ears pop but also showed a very scenic view of NYC</p>
+        <h2>Coney Island</h2>
+        <img src="https://www.nycgovparks.org/photo_gallery/full_size/25097.jpg" alt="Coney Island Beach Image">
+        <p>I don't really like the rides at Luna Park but the nice cool beach breeze is good</p>
+        <h2>The Oculus</h2>
+        <img src="https://assets3.cbsnewsstatic.com/hub/i/r/2016/09/08/118a7357-9eee-4ef8-a3e6-92365053f4f6/thumbnail/640x480/7ff625e45c1bc54b67e84da78c20d257/daniel-jones-greenwich-st-entrance.jpg" alt="The Oculus Image">
+        <p>Looks like a rib cage or some pokemon</p>
+    </div>
+    <h2>Worst Spots in NYC</h2>
+    <div class="list">
+        <h2>Subway</h2>
+        <img src="https://static01.nyt.com/images/2020/03/27/nyregion/00nyvirus-subwayNEW30/00nyvirus-subwayNEW30-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Subway image">
+        <p>Always crowded in the morning. For some reason has delays and rerouts in the worst possible times.</p>
+        <h2>Any Public Bathroom</h2>
+        <img src="images/bathroom.jpg" alt="Public Bathroom Image">
+        <p>Public bathrooms are dirty and toliet paper is almost always littered around the floor.</p>
+    </div>
+    <!-- Form doesn't actually work-->
+    <form onsubmit="return false;">
+       <h1>What's Your Favorite Spot in NYC?</h1><br><br>
+        <input list="best-spots" name="best-spots"><br>
+        <datalist id="best-spots">
+            <option value="One World Trade Center">
+            <option value="Coney Island">
+            <option value="The Oculus"></option>
+        </datalist><br><br>
+        <input type="submit">
+    </form>
+    <h1>My Rating of the NYC Spots</h1>
+    <!-- Table  -->
+    <table class="center-table">
+        <tr>
+            <th>NYC Spot</th>
+            <th>Rating (1-10)</th>
+        </tr>
+        <tr>
+            <td>One World Trade Center</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>The Oculus</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Coney Island</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Subway</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Public Bathrooms</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <!-- Semantic Element and Copyright -->
+    <footer>2022-2022 &copy;</footer>
+
+    <!-- Spots Validation image at images/spots-validation.png -->
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!-- Raymond L. Section 85 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        ul
+        {
+            list-style-type: none;
+            font-size: 3vh;
+        }
+        body
+        {
+            background-color: #2999BC;
+            color: black;
+            font-weight: 200;
+            font-size: x-large;
+            text-align: center;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        img
+        {
+            width: 400px;
+            height: 300px;
+        }
+        .navbar
+        {
+            font-size: 2.5vh;
+        } 
+        a:link
+        {
+            text-decoration: none;
+        }
+        a:visited , a:link
+        {
+            color: rgb(128, 12, 12);
+        }
+        a:hover
+        {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Redirects to other pages / unordered list -->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href = "index.html">Home</a>
+            </li>
+            <li>
+                <!-- Relative links -->
+                <a href="favorites.html">Favorites</a>
+            </li>
+            <li>
+                <a href="skills.html">How To</a>
+            </li>
+            <li>
+                <a href="spots.html">NYC Spots</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Two headings -->
+    <h1>Raymond</h1>
+    <h2>Lin</h2>
+    
+    <div class="intro">
+        <!-- Two Paragraphs -->
+        <p>Hello, my name is Raymond and I live in Brooklyn.</p>
+        <p>I'm currently 17 years old.</p>
+        <!-- Image, Relative Link -->
+        <img src="images/brooklyn.jpg" alt="brooklyn bridge">
+        <!-- Image, Absolute Link -->
+        <img src="https://media.timeout.com/images/105683556/750/422/image.jpg" alt="brooklyn bridge">
+    </div>
+    <!-- Semantic Element and Copyright -->
+    <footer>Raymond L. Section 85 2022-2022 &copy;</footer>
+
+    <!-- Index Validation image at images/index-validation.png -->
+</body>
+</html>
